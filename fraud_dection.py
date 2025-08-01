@@ -1,6 +1,10 @@
 import streamlit as st
 import pandas as pd
 import joblib
+import sys
+print("Python Path:", sys.executable)
+print("Module Search Paths:", sys.path)
+sys.path.append("/path/to/joblib")
 
 # Load the pre-trained model
 model = joblib.load("Frad_detection_analysis_model.pkl")
